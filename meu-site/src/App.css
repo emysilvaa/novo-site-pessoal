@@ -1,0 +1,180 @@
+@font-face {
+    font-family: sf-ui;
+    src: url("./fonts/SFUIText-Regular.ttf");
+}
+
+@font-face {
+    font-family: sf-ui-grande;
+    src: url("./fonts/SFUIText-Heavy.ttf");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sf-ui;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+header {
+    width: auto;
+    background-color: #4831D4;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.container-navbar {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-navbar a{
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.container-navbar a:hover {
+    color: #FF00B8;
+}
+
+.container-navbar a p {
+    font-weight: bold;
+}
+
+#nome-pessoal {
+    margin-left: 150px;
+    font-size: 40px; 
+    color: #CCF381; 
+}
+
+#nome-pessoal p{
+    font-family: sf-ui-grande;
+    font-weight: bold;
+}
+
+#nome-pessoal:hover {
+    color: #FF00B8;
+}
+
+.ancoras {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 200px;
+}
+
+.ancoras a {
+    margin-left: 20px;
+    color: #CCF381; 
+    font-size: 18px;
+}
+
+#hero {
+    min-height: 100vh;
+    background-color: #4831D4;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-hero {
+    min-width: 1246px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#foto-hero {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: 5;
+    object-fit: cover;
+}
+
+.elemento-foto {
+    z-index: 4;
+}
+
+.me-conheca {
+    display: flex;
+    flex-direction: column;
+}
+
+.me-conheca h1 {
+    font-size: 80px;
+    color: #CCF381;
+    font-weight: bold;
+    max-width: 500px;
+    font-family: sf-ui-grande;
+}
+
+#button-me-conheca {
+    width: 230px;
+    height: 60px;
+    background-color: #FF00B8;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 19px;
+    font-family: sf-ui-grande;
+}
+
+#sobre-mim {
+    min-height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-sobre {
+    max-width: 1250px;
+    min-height: 650px;
+    background-color: #4831D4;
+    box-shadow: 11px 15px 4px 0px #CCF381; 
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#foto_praia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texto-sobre h1 {
+    font-size: 50px; 
+    color: #CCF381;
+    font-weight: bold;
+    font-family: sf-ui-grande;
+}
+
+.texto-sobre p {
+    margin-top: 60px;
+    width: 80%;
+    font-size: 20px; 
+    color: white;
+}

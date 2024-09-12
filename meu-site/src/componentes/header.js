@@ -1,10 +1,13 @@
 import React from "react";
 
-function Header(){
+function Header({nome, ancora}){
     return(
-        <p>oi este será meu futuro header</p>
-
+        <a href={nome}><p>{ancora}</p></a>
     );
 }
+
+
+
+
 
 export default Header;
