@@ -1,6 +1,17 @@
 import React from "react";
 
 function Main (){
+    function Images({caminho}){
+        return(
+            <img src={caminho} ></img>
+
+        );
+
+    }
+        
+    
+
+
     function Cards({caminho, numero, legenda}){
         return(
             <div className="cards-curiosidades">
@@ -22,11 +33,11 @@ function Main (){
             <section id='hero'>
                 <div className='container-hero'>
                     <div className='me-conheca'>
-                    <h1>Emilly Estefanny</h1>
-                    <a href='#sobre-mim' id='button-me-conheca'>Conheça mais sobre mim</a>
+                        <h1>Emilly Estefanny</h1>
+                        <a href='#sobre-mim' id='button-me-conheca'>Conheça mais sobre mim</a>
                     </div>
                     <div className='foto-perfil'>
-                    <img id='foto-hero' src='./img/hero_perfil.jpg' ></img>
+                        <Images />
                     </div>
                 </div>
             </section>
@@ -34,15 +45,13 @@ function Main (){
             <section id='sobre-mim'>
                 <div className='container-sobre' >
                     <div id="foto-praia">
-                        <img src='src/img/perfil.jpg'></img>
+                        <Images  />
                     </div>
                     <div className='texto-sobre'>
                         <h1>Sobre mim</h1>
                         <p>Olá, meu nome é Emilly Estefanny tenho 19 anos e moro em Ceará-Mirim, Rio Grande do Norte. Gosto de cozinhar, desenhar e criar design. Meu sonho é conseguir ter uma vida maneira e viajar por vários lugares legais.</p>
                     </div>
                 </div>
-
-
             </section>
 
             <section id="curiosidades">
@@ -58,7 +67,11 @@ function Main (){
                     </div>
 
                     <div className="container-cards">
-                        <Cards caminho='./img/stranger.png' numero='1' legenda='Minha série preferida é Stranger Things'      />
+                        <Cards caminho='./img/stranger.png' numero='1' legenda='Minha série preferida é Stranger Things'/>
+                        <Cards caminho='./img/supercilio.png' numero='2' legenda='Abri o supercilio quando tinha 9 anos'/>
+                        <Cards caminho='./img/Rectangle 18.png' numero='3' legenda='Meu anime favorito é One Piece'/>
+                        <Cards caminho='./img/borboleta.png' numero='4' legenda='Tenho medo de borboletas'/>
+                        <Cards caminho='./img/saobernardo.png' numero='5' legenda='Nasci em São Bernardo do Campo/SP'/>
 
                     </div>
                     
