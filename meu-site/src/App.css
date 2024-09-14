@@ -216,21 +216,21 @@ header {
     font-family: sf-ui-grande;
 }
 
-#titulo-curiosidades {
+#titulo-curiosidades , #titulo-portifolio {
     font-size: 40px; 
     color: #4831D4;
     margin-left: 20px;
     font-family: sf-ui-grande;
 }
 
-.container-cards {
+.container-cards, .container-cards-portifolio  {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 50px;
 }
 
-.cards-curiosidades {
+.cards-curiosidades , .cards-portifolio{
     margin-right: 1px;
     width: 410px;
     height: 600px;
@@ -243,14 +243,14 @@ header {
     align-items: center;
 }
 
-.cards-curiosidades img {
+.cards-curiosidades, .cards-portifolio img {
     max-width: 380px;
     max-height: 458px;
     object-fit: cover;
 }
 
 
-.cards-curiosidades figcaption {
+.cards-curiosidades, .cards-portifolio figcaption {
     font-size: 16px;
     text-align: center;
     color: #ffffff;
@@ -271,7 +271,7 @@ header {
     margin-top: 20px;
 }
 
-.cards-curiosidades figure{
+.cards-curiosidades, .cards-portifolio figure{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

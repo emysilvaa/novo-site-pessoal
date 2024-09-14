@@ -3,13 +3,23 @@ import React from "react";
 function Main (){
     function Images({caminho}){
         return(
-            <img src={caminho} ></img>
+            <img src={caminho}></img>
 
         );
 
     }
         
-    
+    function CardPortifolio({caminho, link, legenda }){
+        return(
+            <div className="cards-portifolio">
+                <figure >
+                    <img src={caminho}></img>
+                    <a href={link}><figcaption>{legenda}</figcaption></a>
+                </figure>
+            </div>
+
+        );
+    }
 
 
     function Cards({caminho, numero, legenda}){
@@ -37,7 +47,7 @@ function Main (){
                         <a href='#sobre-mim' id='button-me-conheca'>Conheça mais sobre mim</a>
                     </div>
                     <div className='foto-perfil'>
-                        <Images />
+                       <img src="./img/hero_perfil.jpg" ></img>
                     </div>
                 </div>
             </section>
@@ -45,7 +55,7 @@ function Main (){
             <section id='sobre-mim'>
                 <div className='container-sobre' >
                     <div id="foto-praia">
-                        <Images  />
+                        <img src="./img/foto_praia.png" ></img>
                     </div>
                     <div className='texto-sobre'>
                         <h1>Sobre mim</h1>
@@ -72,14 +82,30 @@ function Main (){
                         <Cards caminho='./img/Rectangle 18.png' numero='3' legenda='Meu anime favorito é One Piece'/>
                         <Cards caminho='./img/borboleta.png' numero='4' legenda='Tenho medo de borboletas'/>
                         <Cards caminho='./img/saobernardo.png' numero='5' legenda='Nasci em São Bernardo do Campo/SP'/>
-
                     </div>
-                    
-
                 </div>
-
             </section>
 
+            <section id="portifolio">
+                <div className="container-portifolio">
+                    <div id="titulo-portifolio">
+                        <h1>Meus Projetos</h1>
+                    </div>
+                </div>
+
+            <div className="container-cards-portifolio">
+                <div className="cards-portifolio" >
+                    
+                    <CardPortifolio caminho='' link='' legenda='' />
+                    <CardPortifolio caminho='' link='' legenda='' />
+                    <CardPortifolio caminho='' link='' legenda='' />
+
+                    
+                </div>
+
+            </div>
+
+            </section>
 
       </main>
         
