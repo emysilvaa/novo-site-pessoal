@@ -190,7 +190,7 @@ header {
     margin: 200px 0px;
 }
 
-.container-curiosidades, .container-portifolio {
+.container-curiosidades {
     width: 80%;
     display: flex;
     justify-content: center;
@@ -198,6 +198,13 @@ header {
     flex-wrap: wrap;
     flex-direction: column;
 }
+
+.container-portifolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .num-cinco {
     display: flex;
@@ -220,28 +227,33 @@ header {
     font-family: sf-ui-grande;
 }
 
-#titulo-curiosidades, #titulo-portifolio  {
+#titulo-curiosidades, #titulo-portifolio {
     font-size: 35px; 
     color: #4831D4;
     margin-left: 20px;
     font-family: sf-ui-grande;
 }
 
-#titulo-portifolio{
-    align-items: center;
-    justify-content: center;
-}
-
-.container-cards  {
+.container-cards-curiosidades, .container-cards-portifolio {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 50px;
 }
 
+
+
+#portifolio{
+    background-color: #4831D4;
+    width: 100%;
+    height: 1000px;
+}
+
+
+
 .cards-curiosidades {
     margin-right: 1px;
-    width: 390px;
+    width: 350px;
     height: 500px;
     background-color: #4831D4;
     border-radius: 10px;
@@ -252,35 +264,66 @@ header {
     align-items: center;
 }
 
-#fotos-curiosidades  {
-    max-width: 310px;
-    max-height: 800px;
-    object-fit: cover;
-  
+.cards-portifolio{
+    margin-right: 1px;
+    width: 300px;
+    height: 400px;
+    background-color:#FF00B8;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
 
-.cards-curiosidades, figcaption {
+.cards-curiosidades img {
+    max-width: 380px;
+    max-height: 458px;
+    object-fit: cover;
+}
+ 
+.cards-portifolio img {
+    max-width: 380px;
+    max-height: 458px;
+    object-fit: cover;
+
+    
+}
+
+.cards-curiosidades figcaption  {
     font-size: 16px;
     text-align: center;
     color: #ffffff;
     font-weight: bold;
-    margin-left: -10px;
-    margin-top: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
 }
 
-.num-curiosidades {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #CCF381;
-    color: #4831D4;
+.cards-portifolio  {
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.cards-portifolio button{
+    background-color: #CCF381 ;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    margin-left: -10px;
+    text-decoration: none;
+    margin-top: 19px;
+    font-family: sf-ui-grande;
+
 }
 
 .cards-curiosidades, .cards-portifolio figure{
@@ -290,8 +333,47 @@ header {
     align-items: center;
 }
 
-#fotos-portifolio{
-    width: 200px;
-    height: 200px;
+#fotos-curiosidades  {
+    max-width: 300px;
+    max-height: 800px;
+    object-fit: cover;
+    
+}
 
+
+#fotos-portifolio{
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+  
+    
+    
+
+}
+
+#titulo-portifolio{
+    align-items: center;
+    justify-content: center;
+}
+
+#contato {
+    min-height: 500px;
+    background-color: #3D155F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-footer h1 {
+    font-family: sf-ui-grande;
+    font-size: 40px;
+    color: #CCF381;
+    text-align: center;
+}
+
+.container-footer a {
+    font-size: 20px;
+    color: #CCF381;
+    margin-left: 50px;
+    margin-right: 50px;
 }

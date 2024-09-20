@@ -9,7 +9,7 @@ import Anime from "../images/anime.png";
 
 import PyGreen from "../images/pygreen.png";
 import PyTech from "../images/pytech.png";
-import Jogo from "../images/jogoMemoria.png";
+import Jogo from "../images/jogomemoria.png";
 
 
 
@@ -23,7 +23,8 @@ function Main (){
             <div className="cards-portifolio">
                 <figure >
                     <img id='fotos-portifolio' src={caminho} ></img>
-                    <a href={link}><figcaption>{legenda}</figcaption></a>
+                    <figcaption>{legenda}</figcaption>
+                    <button><a href={link} >Veja mais</a></button>
                 </figure>
             </div>
 
@@ -31,17 +32,13 @@ function Main (){
     }
 
 
-    function Cards  ({caminho, numero, legenda, descricao}) {
+    function CardsCuriosidades  ({caminho, legenda, descricao}) {
         return(
             <div className="cards-curiosidades">
                 <figure>
                     <img id="fotos-curiosidades" src={caminho} alt={descricao} ></img>
-                    <div className="num-curiosidades">
-                        <h1>{numero}</h1>
-                    </div>
                     <figcaption>{legenda}</figcaption>
                 </figure>
-
             </div>
 
         );
@@ -85,12 +82,12 @@ function Main (){
                         </div>
                     </div>
 
-                    <div className="container-cards">
-                        <Cards caminho={Serie} descricao={'Capa de seriado: Stranger Things'} numero='1' legenda='  Minha série preferida é Stranger Things' /> 
-                        <Cards caminho={SuperCilio} descricao={'Emilly após sofrer acidente'} numero='2' legenda='Abri o supercilio quando tinha 9 anos'/>
-                        <Cards caminho={Anime} descricao={'personagem luffy'} numero='3' legenda='Meu anime favorito é One Piece'/>
-                        <Cards caminho={Borboleta} descricao={'Borboleta'} numero='4' legenda='Tenho medo de borboletas'/>
-                        <Cards caminho={SP} descricao={'Cidade de são paulo'} numero='5' legenda='Nasci em São Bernardo do Campo/SP'/>
+                    <div className="container-cards-curiosidades">
+                        <CardsCuriosidades caminho={Serie} descricao={'Capa de seriado: Stranger Things'}  legenda='  Minha série preferida é Stranger Things' /> 
+                        <CardsCuriosidades caminho={SuperCilio} descricao={'Emilly após sofrer acidente'}  legenda='Abri o supercilio quando tinha 9 anos'/>
+                        <CardsCuriosidades caminho={Anime} descricao={'personagem luffy'}  legenda='Meu anime favorito é One Piece'/>
+                        <CardsCuriosidades caminho={Borboleta} descricao={'Borboleta'}  legenda='Tenho medo de borboletas'/>
+                        <CardsCuriosidades caminho={SP} descricao={'Cidade de são paulo'}  legenda='Nasci em São Bernardo do Campo/SP'/>
                     </div>
                 </div>
             </section>
@@ -102,18 +99,11 @@ function Main (){
                     </div>
                 </div>
 
-            <div className="container-cards-portifolio">
-                <div className="cards-portifolio" >
-                    
+                <div className="container-cards-portifolio">
                     <CardPortifolio caminho={PyGreen} link='https://github.com/PedroPegado/pygreen-site-react-teste' legenda='Jogo da Memória' />
                     <CardPortifolio caminho={PyTech} link='https://github.com/PedroAug91/PyTech' legenda='Projeto PyTech' />
                     <CardPortifolio caminho={Jogo} link='https://github.com/emysilvaa/Jogo-da-memoria' legenda='Jogo da Memória' />
-
-                    
                 </div>
-
-            </div>
-
             </section>
 
       </main>
