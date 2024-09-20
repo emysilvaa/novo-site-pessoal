@@ -1,19 +1,28 @@
 import React from "react";
+import Perfil from "../images/hero-perfil.jpg";
+import Praia from "../images/foto-praia.png";
+import Serie from "../images/stranger.png";
+import Borboleta from "../images/borboleta.png";
+import SP from "../images/saobernardo.png";
+import SuperCilio from "../images/supercilio.png";
+import Anime from "../images/anime.png";
+
+import PyGreen from "../images/pygreen.png";
+import PyTech from "../images/pytech.png";
+import Jogo from "../images/jogoMemoria.png";
+
+
+
+
+
 
 function Main (){
-    function Images({caminho}){
-        return(
-            <img src={caminho}></img>
-
-        );
-
-    }
-        
+       
     function CardPortifolio({caminho, link, legenda }){
         return(
             <div className="cards-portifolio">
                 <figure >
-                    <img src={caminho}></img>
+                    <img id='fotos-portifolio' src={caminho} ></img>
                     <a href={link}><figcaption>{legenda}</figcaption></a>
                 </figure>
             </div>
@@ -22,11 +31,11 @@ function Main (){
     }
 
 
-    function Cards({caminho, numero, legenda}){
+    function Cards  ({caminho, numero, legenda, descricao}) {
         return(
             <div className="cards-curiosidades">
                 <figure>
-                    <img src={caminho} ></img>
+                    <img id="fotos-curiosidades" src={caminho} alt={descricao} ></img>
                     <div className="num-curiosidades">
                         <h1>{numero}</h1>
                     </div>
@@ -47,7 +56,7 @@ function Main (){
                         <a href='#sobre-mim' id='button-me-conheca'>Conheça mais sobre mim</a>
                     </div>
                     <div className='foto-perfil'>
-                       <img src="./img/hero_perfil.jpg" ></img>
+                       <img id='foto-hero' src={Perfil} alt="foto do perfi"></img>
                     </div>
                 </div>
             </section>
@@ -55,7 +64,7 @@ function Main (){
             <section id='sobre-mim'>
                 <div className='container-sobre' >
                     <div id="foto-praia">
-                        <img src="./img/foto_praia.png" ></img>
+                        <img id='praia' src={Praia}></img>
                     </div>
                     <div className='texto-sobre'>
                         <h1>Sobre mim</h1>
@@ -77,11 +86,11 @@ function Main (){
                     </div>
 
                     <div className="container-cards">
-                        <Cards caminho='./img/stranger.png' numero='1' legenda='Minha série preferida é Stranger Things'/>
-                        <Cards caminho='./img/supercilio.png' numero='2' legenda='Abri o supercilio quando tinha 9 anos'/>
-                        <Cards caminho='./img/Rectangle 18.png' numero='3' legenda='Meu anime favorito é One Piece'/>
-                        <Cards caminho='./img/borboleta.png' numero='4' legenda='Tenho medo de borboletas'/>
-                        <Cards caminho='./img/saobernardo.png' numero='5' legenda='Nasci em São Bernardo do Campo/SP'/>
+                        <Cards caminho={Serie} descricao={'Capa de seriado: Stranger Things'} numero='1' legenda='  Minha série preferida é Stranger Things' /> 
+                        <Cards caminho={SuperCilio} descricao={'Emilly após sofrer acidente'} numero='2' legenda='Abri o supercilio quando tinha 9 anos'/>
+                        <Cards caminho={Anime} descricao={'personagem luffy'} numero='3' legenda='Meu anime favorito é One Piece'/>
+                        <Cards caminho={Borboleta} descricao={'Borboleta'} numero='4' legenda='Tenho medo de borboletas'/>
+                        <Cards caminho={SP} descricao={'Cidade de são paulo'} numero='5' legenda='Nasci em São Bernardo do Campo/SP'/>
                     </div>
                 </div>
             </section>
@@ -96,9 +105,9 @@ function Main (){
             <div className="container-cards-portifolio">
                 <div className="cards-portifolio" >
                     
-                    <CardPortifolio caminho='' link='' legenda='' />
-                    <CardPortifolio caminho='' link='' legenda='' />
-                    <CardPortifolio caminho='' link='' legenda='' />
+                    <CardPortifolio caminho={PyGreen} link='https://github.com/PedroPegado/pygreen-site-react-teste' legenda='Jogo da Memória' />
+                    <CardPortifolio caminho={PyTech} link='https://github.com/PedroAug91/PyTech' legenda='Projeto PyTech' />
+                    <CardPortifolio caminho={Jogo} link='https://github.com/emysilvaa/Jogo-da-memoria' legenda='Jogo da Memória' />
 
                     
                 </div>

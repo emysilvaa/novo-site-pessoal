@@ -95,8 +95,8 @@ header {
 }
 
 #foto-hero {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.25);
     z-index: 5;
@@ -113,7 +113,7 @@ header {
 }
 
 .me-conheca h1 {
-    font-size: 80px;
+    font-size: 70px;
     color: #CCF381;
     font-weight: bold;
     max-width: 500px;
@@ -121,11 +121,11 @@ header {
 }
 
 #button-me-conheca {
-    width: 230px;
+    width: 250px;
     height: 60px;
     background-color: #FF00B8;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 15px;
     color: #ffffff;
     display: flex;
     justify-content: center;
@@ -143,8 +143,8 @@ header {
 }
 
 .container-sobre {
-    max-width: 1250px;
-    min-height: 650px;
+    max-width: 900px;
+    min-height: 500px;
     background-color: #4831D4;
     box-shadow: 11px 15px 4px 0px #CCF381; 
     border-radius: 10px;
@@ -152,10 +152,14 @@ header {
     grid-template-columns: repeat(2, 1fr);
 }
 
-#foto-praia {
+#praia {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 400px;
+    height: auto;
+    padding: 40px;
+    border-radius: 15px;
 }
 
 .texto-sobre {
@@ -166,7 +170,7 @@ header {
 }
 
 .texto-sobre h1 {
-    font-size: 50px; 
+    font-size: 30px; 
     color: #CCF381;
     font-weight: bold;
     font-family: sf-ui-grande;
@@ -175,7 +179,7 @@ header {
 .texto-sobre p {
     margin-top: 60px;
     width: 80%;
-    font-size: 20px; 
+    font-size: 15px; 
     color: white;
 }
 
@@ -186,7 +190,7 @@ header {
     margin: 200px 0px;
 }
 
-.container-curiosidades {
+.container-curiosidades, .container-portifolio {
     width: 80%;
     display: flex;
     justify-content: center;
@@ -201,8 +205,8 @@ header {
 }
 
 #cinco {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     background-color: #CCF381;
     color: #4831D4;
@@ -212,28 +216,33 @@ header {
 }
 
 #cinco h1 {
-    font-size: 130px;
+    font-size: 99px;
     font-family: sf-ui-grande;
 }
 
-#titulo-curiosidades , #titulo-portifolio {
-    font-size: 40px; 
+#titulo-curiosidades, #titulo-portifolio  {
+    font-size: 35px; 
     color: #4831D4;
     margin-left: 20px;
     font-family: sf-ui-grande;
 }
 
-.container-cards, .container-cards-portifolio  {
+#titulo-portifolio{
+    align-items: center;
+    justify-content: center;
+}
+
+.container-cards  {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 50px;
 }
 
-.cards-curiosidades , .cards-portifolio{
+.cards-curiosidades {
     margin-right: 1px;
-    width: 410px;
-    height: 600px;
+    width: 390px;
+    height: 500px;
     background-color: #4831D4;
     border-radius: 10px;
     margin-bottom: 40px;
@@ -243,32 +252,35 @@ header {
     align-items: center;
 }
 
-.cards-curiosidades, .cards-portifolio img {
-    max-width: 380px;
-    max-height: 458px;
+#fotos-curiosidades  {
+    max-width: 310px;
+    max-height: 800px;
     object-fit: cover;
+  
+
 }
 
 
-.cards-curiosidades, .cards-portifolio figcaption {
+.cards-curiosidades, figcaption {
     font-size: 16px;
     text-align: center;
     color: #ffffff;
     font-weight: bold;
-    margin-left: 10px;
-    margin-top: 20px;
+    margin-left: -10px;
+    margin-top: 10px;
 }
 
 .num-curiosidades {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: #CCF381;
     color: #4831D4;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-left: -10px;
 }
 
 .cards-curiosidades, .cards-portifolio figure{
@@ -276,4 +288,10 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+#fotos-portifolio{
+    width: 200px;
+    height: 200px;
+
 }
