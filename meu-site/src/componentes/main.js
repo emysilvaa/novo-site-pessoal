@@ -23,8 +23,10 @@ function Main (){
             <div className="cards-portifolio">
                 <figure >
                     <img id='fotos-portifolio' src={caminho} ></img>
-                    <figcaption>{legenda}</figcaption>
-                    <button><a href={link} >Veja mais</a></button>
+                    <div id='legenda-portifolio' >
+                        <figcaption>{legenda}</figcaption>
+                        <button className='portifolio-button' ><a href={link} >Veja mais</a></button>
+                    </div>
                 </figure>
             </div>
 
@@ -100,7 +102,7 @@ function Main (){
                 </div>
 
                 <div className="container-cards-portifolio">
-                    <CardPortifolio caminho={PyGreen} link='https://github.com/PedroPegado/pygreen-site-react-teste' legenda='Jogo da Memória' />
+                    <CardPortifolio caminho={PyGreen} link='https://github.com/PedroPegado/pygreen-site-react-teste' legenda='Projeto PyGreen' />
                     <CardPortifolio caminho={PyTech} link='https://github.com/PedroAug91/PyTech' legenda='Projeto PyTech' />
                     <CardPortifolio caminho={Jogo} link='https://github.com/emysilvaa/Jogo-da-memoria' legenda='Jogo da Memória' />
                 </div>

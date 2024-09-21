@@ -203,6 +203,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 40px;
 }
 
 
@@ -227,11 +228,20 @@ header {
     font-family: sf-ui-grande;
 }
 
-#titulo-curiosidades, #titulo-portifolio {
+#titulo-curiosidades {
     font-size: 35px; 
     color: #4831D4;
     margin-left: 20px;
     font-family: sf-ui-grande;
+}
+
+#titulo-portifolio{
+    font-size: 35px; 
+    color: #4831D4;
+    margin-left: 20px;
+    font-family: sf-ui-grande;
+    margin-bottom: 40px;
+
 }
 
 .container-cards-curiosidades, .container-cards-portifolio {
@@ -241,12 +251,15 @@ header {
     margin-top: 50px;
 }
 
+.container-cards-portifolio{
+    gap: 30px;
+}
 
 
 #portifolio{
-    background-color: #4831D4;
+    background-color: #ffffff;
     width: 100%;
-    height: 1000px;
+    height: 700px;
 }
 
 
@@ -268,7 +281,7 @@ header {
     margin-right: 1px;
     width: 300px;
     height: 400px;
-    background-color:#FF00B8;
+    background-color:#ff24c1;
     border-radius: 10px;
     margin-bottom: 100px;
     display: flex;
@@ -293,6 +306,54 @@ header {
     
 }
 
+#fotos-portifolio {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+#legenda-portifolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+#legenda-portifolio figcaption {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+
+    
+}
+  
+.portifolio-button {
+    padding: 12px 25px;
+    background-color: #CCF381; 
+    color: white;
+    border: none;
+    border-radius: 20px; 
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow:  #CCF381; 
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+  }
+  
+  .portifolio-button a {
+    color: #4831D4;
+    text-decoration: none;
+  }
+  
+  .portifolio-button:hover {
+    background-color: #CCF381; 
+    transform: translateY(-5px); 
+    box-shadow: #CCF381;
+  }
+
 .cards-curiosidades figcaption  {
     font-size: 16px;
     text-align: center;
@@ -302,29 +363,7 @@ header {
     margin-top: 20px;
 }
 
-.cards-portifolio  {
-    font-size: 20px;
-    text-align: center;
-    color: #ffffff;
-    font-weight: bold;
-    margin-left: 10px;
-    margin-top: 20px;
-    text-decoration: none;
-}
 
-.cards-portifolio button{
-    background-color: #CCF381 ;
-    border-radius: 10px;
-    font-size: 15px;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    margin-top: 19px;
-    font-family: sf-ui-grande;
-
-}
 
 .cards-curiosidades, .cards-portifolio figure{
     display: flex;
@@ -357,7 +396,7 @@ header {
 }
 
 #contato {
-    min-height: 500px;
+    min-height: 300px;
     background-color: #3D155F;
     display: flex;
     justify-content: center;
@@ -369,6 +408,7 @@ header {
     font-size: 40px;
     color: #CCF381;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .container-footer a {
@@ -376,4 +416,5 @@ header {
     color: #CCF381;
     margin-left: 50px;
     margin-right: 50px;
+    margin-top: 40px;
 }
